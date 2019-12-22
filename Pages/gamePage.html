@@ -95,23 +95,36 @@
     <div class="row content">
         <div class="col-xs-2 sidenav">
             <button type="button" onclick="selectNextColour()" class="btn btn-secondary">Show</br>Sequence</button>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Select Light
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" onclick="lightSelected(1, 0, 'On', 100, 100)">Light 1</a>
+                    <a class="dropdown-item" onclick="lightSelected(2, 0, 'On', 100, 100)">Light 2</a>
+                    <a class="dropdown-item" onclick="lightSelected(3, 0, 'On', 100, 100)">Light 3</a>
+                    <a class="dropdown-item" onclick="lightSelected(4, 0, 'On', 100, 100)">Light 4</a>
+                    <a class="dropdown-item" onclick="lightSelected(5, 0, 'On', 100, 100)">Light 5</a>
+                    <a class="dropdown-item" onclick="lightSelected(6, 0, 'On', 100, 100)">Light 6</a>
+                </div>
+            </div>
         </div>
         <div class="col-xs-8" id="TheMiddleBit">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-2 text-left">
-                        <button type="button" class="btn" style="background-color: red; min-height: 100%; min-width: 100%">Red</button>
+                        <button type="button" class="btn" style="background-color: red; min-height: 100%; min-width: 100%"></button>
                     </div>
                     <div class="col-xs-2 text-left">
-                        <button type="button" class="btn" style="background-color: green; min-height: 100%; min-width: 100%">Green</button>
+                        <button type="button" class="btn" style="background-color: green; min-height: 100%; min-width: 100%"></button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-2">
-                        <button type="button" class="btn" style="background-color: blue; min-height: 100%; min-width: 100%">Blue</button>
+                        <button type="button" class="btn" style="background-color: blue; min-height: 100%; min-width: 100%"></button>
                     </div>
                     <div class="col-xs-2">
-                        <button type="button" class="btn" style="background-color: yellow; min-height: 100%; min-width: 100%">Yellow</button>
+                        <button type="button" class="btn" style="background-color: yellow; min-height: 100%; min-width: 100%"></button>
                     </div>
                 </div>
             </div>
