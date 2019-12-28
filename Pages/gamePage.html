@@ -100,12 +100,12 @@
                     Select Light
                 </button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" onclick="lightSelected(1, 0, 'On', 100, 100)">Light 1</a>
-                    <a class="dropdown-item" onclick="lightSelected(2, 0, 'On', 100, 100)">Light 2</a>
-                    <a class="dropdown-item" onclick="lightSelected(3, 0, 'On', 100, 100)">Light 3</a>
-                    <a class="dropdown-item" onclick="lightSelected(4, 0, 'On', 100, 100)">Light 4</a>
-                    <a class="dropdown-item" onclick="lightSelected(5, 0, 'On', 100, 100)">Light 5</a>
-                    <a class="dropdown-item" onclick="lightSelected(6, 0, 'On', 100, 100)">Light 6</a>
+                    <a class="dropdown-item" onclick="lightSelected(1, 0, 'On', 100, 254), selectedLight(1)">Light 1</a>
+                    <a class="dropdown-item" onclick="lightSelected(2, 0, 'On', 100, 254), selectedLight(2)">Light 2</a>
+                    <a class="dropdown-item" onclick="lightSelected(3, 0, 'On', 100, 254), selectedLight(3)">Light 3</a>
+                    <a class="dropdown-item" onclick="lightSelected(4, 0, 'On', 100, 254), selectedLight(4)">Light 4</a>
+                    <a class="dropdown-item" onclick="lightSelected(5, 0, 'On', 100, 254), selectedLight(5)">Light 5</a>
+                    <a class="dropdown-item" onclick="lightSelected(6, 0, 'On', 100, 254), selectedLight(6)">Light 6</a>
                 </div>
             </div>
         </div>
@@ -113,18 +113,18 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-2 text-left">
-                        <button type="button" class="btn" style="background-color: red; min-height: 100%; min-width: 100%"></button>
+                        <button type="button" class="btn" style="background-color: red; min-height: 100%; min-width: 100%" onclick="saveInput(1)"></button>
                     </div>
                     <div class="col-xs-2 text-left">
-                        <button type="button" class="btn" style="background-color: green; min-height: 100%; min-width: 100%"></button>
+                        <button type="button" class="btn" style="background-color: green; min-height: 100%; min-width: 100%" onclick="saveInput(2)"></button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-2">
-                        <button type="button" class="btn" style="background-color: blue; min-height: 100%; min-width: 100%"></button>
+                        <button type="button" class="btn" style="background-color: blue; min-height: 100%; min-width: 100%" onclick="saveInput(3)"></button>
                     </div>
                     <div class="col-xs-2">
-                        <button type="button" class="btn" style="background-color: yellow; min-height: 100%; min-width: 100%"></button>
+                        <button type="button" class="btn" style="background-color: yellow; min-height: 100%; min-width: 100%" onclick="saveInput(4)"></button>
                     </div>
                 </div>
             </div>
