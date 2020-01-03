@@ -4,6 +4,9 @@ var gameTimer;
 var sequenceNumber = 0;
 var currentLight = 0;
 var result = "";
+var i = 0;
+var victoryTimer;
+var counter = 0;
 
 function selectedLight(l) {
     currentLight = l;
@@ -11,6 +14,7 @@ function selectedLight(l) {
 
 function selectNextColour()
 {
+    userInput = [];
     sequenceNumber=0;
     var nextColour =  Math.floor((Math.random() * 4) + 1);
     if (nextColour == 1)
@@ -44,6 +48,7 @@ function selectNextColour()
 
 function showSequence()
 {
+    counter = 0;
     gameTimer = setInterval(showColour, 1000);
 
 }
@@ -87,10 +92,39 @@ function saveInput(num)
 function checkInput()
     {
         if (colours.length == userInput.length) {
+            i = colours.length;
             if (JSON.stringify(colours) == JSON.stringify(userInput)) {
-                result = "correct"
+                result = "correct";
+                userInput = [];
+                victoryTime();
             } else {
-                result = "incorrect"
+                result = "incorrect";
+                userInput = [];
+                victoryTime();
             }
         }
+        if (userInput.length > colours.length){
+            result = "incorrect";
+        }
     }
+
+function victoryTime()
+{
+    victoryTimer = setInterval(correctOrNot, 1000)
+}
+
+
+function correctOrNot(res)
+{
+    res = result;
+    if (counter < 3) {
+        if (res == "correct") {
+            $('#TheBody .sidenav').css({'backgroundColor': 'green'});
+            counter++;
+        }
+        if (res == "incorrect") {
+            $('#TheBody .sidenav').css({'backgroundColor': 'red'});
+            counter++;
+        }
+    }
+}
