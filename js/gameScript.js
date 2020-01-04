@@ -14,6 +14,7 @@ function selectedLight(l) {
 
 function selectNextColour()
 {
+    $('#TheBody .sidenav').css({'backgroundColor':''});
     userInput = [];
     sequenceNumber=0;
     var nextColour =  Math.floor((Math.random() * 4) + 1);
@@ -76,7 +77,7 @@ function saveInput(num)
        }
        if (num == 2)
        {
-           userInput.push("Green");
+           userInput.push("green");
        }
         if (num == 3)
         {
@@ -96,11 +97,14 @@ function checkInput()
             if (JSON.stringify(colours) == JSON.stringify(userInput)) {
                 result = "correct";
                 userInput = [];
-                victoryTime();
+                $('#TheBody .sidenav').css({'backgroundColor': 'green'});
+                //victoryTime();
             } else {
                 result = "incorrect";
                 userInput = [];
-                victoryTime();
+                colours = [];
+                $('#TheBody .sidenav').css({'backgroundColor': 'red'});
+                //victoryTime();
             }
         }
         if (userInput.length > colours.length){
@@ -108,23 +112,23 @@ function checkInput()
         }
     }
 
-function victoryTime()
-{
-    victoryTimer = setInterval(correctOrNot, 1000)
-}
+ // function victoryTime()
+ // {
+ //         victoryTimer = setInterval(correctOrNot, 500)
+ // }
 
 
-function correctOrNot(res)
-{
-    res = result;
-    if (counter < 3) {
-        if (res == "correct") {
-            $('#TheBody .sidenav').css({'backgroundColor': 'green'});
-            counter++;
-        }
-        if (res == "incorrect") {
-            $('#TheBody .sidenav').css({'backgroundColor': 'red'});
-            counter++;
-        }
-    }
-}
+ // function correctOrNot(res)
+ // {
+ //     res = result;
+ //     //if (counter < 3) {
+ //         if (res == "correct") {
+ //             $('#TheBody .sidenav').css({'backgroundColor': 'green'});
+ //             counter++;
+ //         }
+ //         if (res == "incorrect") {
+ //             $('#TheBody .sidenav').css({'backgroundColor': 'red'});
+ //             counter++;
+ //         }
+ //     //}
+ // }
