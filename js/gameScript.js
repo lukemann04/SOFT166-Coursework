@@ -2,11 +2,12 @@ var colours = [];
 var userInput = [];
 var gameTimer;
 var sequenceNumber = 0;
-var currentLight = 0;
+var currentLight = 1;
 var result = "";
 var i = 0;
-var victoryTimer;
+//var victoryTimer;
 var counter = 0;
+var scoreCounter = 0;
 
 function selectedLight(l) {
     currentLight = l;
@@ -17,6 +18,7 @@ function selectNextColour()
     $('#TheBody .sidenav').css({'backgroundColor':''});
     userInput = [];
     sequenceNumber=0;
+    scoreCounter = 0;
     var nextColour =  Math.floor((Math.random() * 4) + 1);
     if (nextColour == 1)
     {
@@ -98,12 +100,17 @@ function checkInput()
                 result = "correct";
                 userInput = [];
                 $('#TheBody .sidenav').css({'backgroundColor': 'green'});
+                setLights(currentLight, 25500, 'On', 100, 254)
+                scoreCounter++;
+                document.getElementById('scoreCount').innerHTML = scoreCounter.toString();
                 //victoryTime();
             } else {
                 result = "incorrect";
                 userInput = [];
                 colours = [];
                 $('#TheBody .sidenav').css({'backgroundColor': 'red'});
+                setLights(currentLight, 0, 'On', 100, 254)
+                document.getElementById('scoreCount').innerHTML = scoreCounter.toString();
                 //victoryTime();
             }
         }
