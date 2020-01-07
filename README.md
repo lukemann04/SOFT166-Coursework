@@ -22,7 +22,9 @@ LINK HERE
 
 The website works on many different browsers:
 
-SCREENSHOTS HERE
+Google Chrome:
+![alt text](https://i.imgur.com/8UWPLRj.png)
+
 
 (web accessability testing)
 
