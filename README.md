@@ -1,7 +1,7 @@
 # SOFT166-Coursework
 This repository is for my memory sequence game that uses the Hue lights in SMB109.
 
-Aplication Description:
+## Aplication Description:
 This appliction is a website that consists of 4 separate pages - the Home Page, the Game Page, the Index Page and the Lights Page.
 Screenshots of each page can be seen bellow:
 
@@ -25,3 +25,8 @@ The website works on many different browsers:
 SCREENSHOTS HERE
 
 (web accessability testing)
+
+## References:
+[Bootstrap](https://getbootstrap.com/)
+</br>
+[JQuery](https://jquery.com/)
