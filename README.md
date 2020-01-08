@@ -32,11 +32,11 @@ Here are some screenshots of the website running on Google Chrome:
 
 Guideline 1: Provide equivalent alternatives to auditory and visual content.
 
-  There is currently no auditory content on the website. As the website makes use of the Hue lights in SMB109, these provide an           equivalent alternative to visual content.
+	There is currently no auditory content on the website. As the website makes use of the Hue lights in SMB109, these provide an           equivalent alternative to visual content.
 
 Guideline 2: Don’t rely on colour alone.
 
-  Due to the nature of the game, this one is difficult. Sound could be added to the website i.e. the colours displayed are                 simultaneously said. Unfortunately, I am currently unable to do this.
+	Due to the nature of the game, this one is difficult. Sound could be added to the website i.e. the colours displayed are                 simultaneously said. Unfortunately, I am currently unable to do this.
 
 Guideline 3: Use markup and style sheets, and do so properly.
 
