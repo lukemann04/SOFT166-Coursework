@@ -24,6 +24,7 @@ function selectNextColour()
     $('#TheBody .sidenav').css({'backgroundColor':''});
     userInput = [];
     sequenceNumber=0;
+    scoreCounter = 0;
     var nextColour =  Math.floor((Math.random() * 4) + 1);
     if (nextColour == 1)
     {
