@@ -56,19 +56,19 @@ Guideline 6: Ensure that pages featuring new technologies transform gracefully.
 
 Guideline 7: Ensure user control of time sensitive content changes.
 
-   The background on the game page binks to change colour, however, this does not happen in quick succession and can be stopped by          navigating to another page using the navigation bar at the top.
+	The background on the game page binks to change colour, however, this does not happen in quick succession and can be stopped by         navigating to another page using the navigation bar at the top.
 
 Guideline 8: Ensure direct accessibility of embedded user interfaces.
 
-  The user interface follows the principles of accessible design.
+	The user interface follows the principles of accessible design.
 
 Guideline 9: Design for device independence.
 
-  The game functions properly with a range of input devices. I have tested it with a mouse, trackpad and touch screen. Unfortunately, a   keyboard cannot be used to interact with the game.
+	The game functions properly with a range of input devices. I have tested it with a mouse, trackpad and touch screen. 			Unfortunately, a keyboard cannot be used to interact with the game.
 
 Guideline 10: User interim solutions.
 
-  Pop-ups and other windows do not appear until user agents allow users to turn off spawned windows. Furthermore, the current window       will not change without informing the user.
+	Pop-ups and other windows do not appear until user agents allow users to turn off spawned windows. Furthermore, the current 		window will not change without informing the user.
 
 Guideline 11: Use W3C technologies and guidelines.
 
@@ -76,7 +76,7 @@ Guideline 11: Use W3C technologies and guidelines.
 
 Guideline 12: Provide context and orientation information.
 
-  The website is laid out in a way to make navigation and use easy for all users. Further instructions for use are provided where         necessary.
+	The website is laid out in a way to make navigation and use easy for all users. Further instructions for use are provided where         necessary.
 
 Guideline 13: Provide clear navigation mechanisms.
 
@@ -84,7 +84,7 @@ Guideline 13: Provide clear navigation mechanisms.
 
 Guideline 14: Ensure that documents are clear and simple.
 
-  The language used is clear and simple. Page layout and graphics are recognisable and easy to understand. 
+	The language used is clear and simple. Page layout and graphics are recognisable and easy to understand. 
 
 
 ## References:
