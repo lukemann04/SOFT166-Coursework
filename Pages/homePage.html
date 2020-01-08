@@ -8,16 +8,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */
+
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
         }
 
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
         .row.content {height: 450px}
 
-        /* Set gray background color and 100% height */
+
         .sidenav {
             padding-top: 20px;
             background-color: #f1f1f1;
@@ -31,10 +31,11 @@
             height: 530px;
         }
 
-        /* Set black background color, white text and some padding */
+
         footer {
             background-color: #555;
             padding: 15px;
+            color: white;
         }
 
     </style>
@@ -55,7 +56,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="homePage.html">Home</a></li>
                 <li><a href="gamePage.html">Game</a></li>
-                <li><a href="indexPage.html">Index</a></li>
+                <li><a href="indexPage.html">About</a></li>
                 <li><a href="lightsPage.html">Lights</a></li>
             </ul>
         </div>
@@ -70,13 +71,22 @@
             <p>On this website you will find a game designed to test your memory.</p>
             <hr>
             <h3>Instructions</h3>
-            <p>On the Game page you will find a game that uses colour sequences to test your memory. There is a dropdown list which can be used to select a specific light for the game. If a light is not selected, all lights will be used.</p>
+            <p>On the Game page you will find a game that uses colour sequences to test your memory.</p>
+            <br>
+            <p>There is a dropdown list which can be used to select a specific light for the game. If a light is not selected, light 1 will be used.</p>
+            <br>
+            <p>1. To start the game press the "Start Sequence" button. This will display the first sequence.</p>
+            <p>2. Try to memorise the colours shown in the sequence. When the sequence is over, press the coloured buttons in the same order as the sequence displayed.</p>
+            <p>3. If your answer is correct, the background will turn green. If your answer is incorrect, the background will turn red.</p>
+            <p>4. If your answer is correct, when you next press the show sequence button, the sequence will be one colour longer.</p>
+            <p>5. If your answer is incorrect, the length of the next sequence will return to 1.</p>
+            <p>6. Do your best to memorise the colours and see how high you can score!</p>
         </div>
         <div class="col-sm-2 sidenav"></div>
         </div>
     </div>
 </div>
 
-<footer class="container-fluid"></footer>
+<footer class="container-fluid text-center">©Luke Mann 2020</footer>
 </body>
 </html>

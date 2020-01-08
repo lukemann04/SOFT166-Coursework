@@ -36,6 +36,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
+            color: white;
         }
 
         body{
@@ -85,7 +86,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="homePage.html">Home</a></li>
                 <li class="active"><a href="gamePage.html">Game</a></li>
-                <li><a href="indexPage.html">Index</a></li>
+                <li><a href="indexPage.html">About</a></li>
                 <li><a href="lightsPage.html">Lights</a></li>
             </ul>
         </div>
@@ -94,7 +95,7 @@
 <div class="container-fluid text-center" id="TheBody">
     <div class="row content">
         <div class="col-xs-2 sidenav">
-            <button type="button" onclick="selectNextColour()" class="btn btn-secondary">Show</br>Sequence</button>
+            <button type="button" onclick="selectNextColour()" class="btn-primary">Show</br>Sequence</button>
             <div class="dropdown">
                 <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     Select Light
@@ -108,6 +109,8 @@
                     <a class="dropdown-item" onclick="lightSelected(6, 10000, 'On', 100, 254), selectedLight(6)">Light 6</a>
                 </div>
             </div>
+            <label id="score">Score:</label>
+            <label id="scoreCount">0</label>
         </div>
         <div class="col-xs-8" id="TheMiddleBit">
             <div class="container-fluid">
@@ -148,7 +151,7 @@
 <script defer src="../js/gameScript.js"></script>
 <script defer src="../js/lights.js"></script>
 
-<footer class="container-fluid"></footer>
+<footer class="container-fluid text-center">©Luke Mann 2020</footer>
 
 </body>
 </html>
