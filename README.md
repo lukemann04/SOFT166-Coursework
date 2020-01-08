@@ -25,7 +25,7 @@ Here are some screenshots of the website running on Google Chrome:
 
 ![alt text](https://i.imgur.com/NwHhDyU.jpg)
 
-![alt text](https://i.imgur.com/wAqcnuf.jpg)
+![alt text](https://i.imgur.com/2hiwlc3.jpg)
 
 
 ## Testing against the Web Accessibility Initiative (wai):
